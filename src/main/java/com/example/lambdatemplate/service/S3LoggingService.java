@@ -54,7 +54,6 @@ public class S3LoggingService {
             writer.flush(); // Ensure content is flushed to the file
 
             String fileContent = Files.readString(Paths.get(fileName)); // Read and log the file contents to verify
-            log.info("File content before uploading to S3: \n" + fileContent);
 
             // Check file size after writing
             File file = new File(fileName);
