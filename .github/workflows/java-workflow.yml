@@ -8,8 +8,8 @@ on:
       - dev
 
 env:
-  DOCKER_IMAGE_NAME: "thebuckeyeman20/youtube:service1"
-  ECR_IMAGE_NAME: "${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/youtube-containers:service1"
+  DOCKER_IMAGE_NAME: "thebuckeyeman20/youtube:youtube-service-1"
+  ECR_IMAGE_NAME: "${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/youtube-containers:youtube-service-1"
   BRANCH: "master"
   CD_REPO_OWNER: "TheBuckeyeMan"
   IAC_REPO_NAME: "Youtube_Service_1_IAC"
