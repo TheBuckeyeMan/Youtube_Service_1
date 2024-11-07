@@ -38,7 +38,7 @@ public class ExternalApiCall {
         Object result = null;
         String fileName = "Fact.json";
         String bucketName = "landing-data-bucket-1220-16492640"; //Add this as repo secret in the future
-        String s3Key = "Youtube/" + fileName;
+        String s3Key = "Youtube/fun-facts/" + fileName;
         String logFileKey = "youtube-app/youtube-logs.csv";
 
         try{
