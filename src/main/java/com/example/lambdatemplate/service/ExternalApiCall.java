@@ -57,10 +57,10 @@ public class ExternalApiCall {
             }
             saveToFile(result, fileName);//Save to Temp Directory
             s3Service.uploadFile(bucketName, s3Key, "/tmp/" + fileName); //Upload to S3
-            s3LoggingService.logMessageToS3("Succcess: Success occured at: " + LocalDateTime.now() + " On: Youtube Service 1" + ",", logFileKey);
+            s3LoggingService.logMessageToS3("Succcess: Success occured at: " + LocalDateTime.now() + " On: youtube-service-1" + ",", logFileKey);
         } catch (HttpStatusCodeException e) {
             log.error("Recieved Error from API", e.getResponseBodyAsString(), e);
-            s3LoggingService.logMessageToS3("Error: Error occured at: " + LocalDate.now() + " On: Youtube Service 1" + ",", logFileKey);
+            s3LoggingService.logMessageToS3("Error: Error occured at: " + LocalDate.now() + " On: youtube-service-1" + ",", logFileKey);
             return null; //Exit the service if we get an error
         }
         return result;
